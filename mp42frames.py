@@ -2,8 +2,13 @@ import cv2
 import os
 
 # set the file name and folder name
-file_video_name = "MVI_4313.mp4"
+file_video_name = "MVI_4706.MP4"
 folder_name = file_video_name.split(".")[0]
+
+# check if the video file exists
+if not os.path.exists(file_video_name):
+    print("The video file does not exist.")
+    exit()
 
 # create the folder
 if not os.path.exists(folder_name):
