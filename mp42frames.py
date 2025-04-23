@@ -2,7 +2,7 @@ import cv2
 import os
 
 # set the file name and folder name
-file_video_name = "MVI_4706.MP4"
+file_video_name = "MVI_3996.MP4"
 folder_name = file_video_name.split(".")[0]
 
 # check if the video file exists
