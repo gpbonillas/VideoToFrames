@@ -51,7 +51,7 @@ for root, dirs, files in os.walk(parent_folder_name):
                     selected_frame = arr_frame[arr_lap.index(max(arr_lap))]
                     # save the frame to folder_name applying left padding to the frame number
                     cv2.imwrite(f"{folder_name}/PiP_V_000{counter}_{str(i+1).zfill(4)}.jpg", selected_frame)
-                    print(f"Frame '{str(i).zfill(4)}.jpg' saved to folder: {folder_name}.")
+                    print(f"Frame '{str(i+1).zfill(4)}.jpg' saved to folder: {folder_name}.")
                 else:
                     print(f"No frame saved to folder: {folder_name} for second {i}.")
 
